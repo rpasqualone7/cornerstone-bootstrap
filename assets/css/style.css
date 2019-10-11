@@ -1,0 +1,21 @@
+
+body {
+	width: 1000px;
+	margin: auto;
+	background-color: tan;
+};
+/* 
+div.jumbotron.jumbotron-fluid {
+	margin-bottom: 0%; margin-top: 50px; text-align: center;
+} */
+
+.carousel-inner {
+	width: 400px;
+	height: 400px;
+
+};
+
+.hexTitle {
+	text-align: center;
+	left: 415
+};
