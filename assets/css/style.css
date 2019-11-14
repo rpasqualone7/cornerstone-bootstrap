@@ -3,19 +3,42 @@ body {
 	width: 1000px;
 	margin: auto;
 	background-color: tan;
-};
-/* 
-div.jumbotron.jumbotron-fluid {
-	margin-bottom: 0%; margin-top: 50px; text-align: center;
-} */
+}
 
-.carousel-inner {
-	width: 400px;
-	height: 400px;
+.jumbotron-light {
+	margin-bottom: 0%; 
+	margin-top: 50px; 
+	text-align: center;
+} 
 
-};
+.container {
+	padding-left: 0px; 
+	background-color: white;
+}
+
+.contact {
+	text-align: right;
+}
 
 .hexTitle {
 	text-align: center;
-	left: 415
-};
+    font-weight: 24px;
+}
+
+.carousel {
+	height: 300px; 
+	width: 300px;
+	left: 350px;
+}
+
+
+#logo {
+	height: 200px; 
+	width: 500px;
+}
+
+#about {
+	margin-bottom: 0%; 
+	margin-top: 50px; 
+	text-align: center;
+}

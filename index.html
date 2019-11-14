@@ -13,9 +13,10 @@
 <body>
 
 
-	<div class="jumbotron-light" style="	margin-bottom: 0%; margin-top: 50px; text-align: center;">
-		<div class="container" style="padding-left: 0px;">
-			<img src="assets/images/logo_white_background.jpg" alt="logo" style="height: 400px; width: 1000px;">
+	<div class="jumbotron-light">
+		<div class="container">
+			<img src="assets/images/logo_white_background.jpg" id="logo" alt="logo">
+			<div class="contact"> Phone number:</div>
 		</div>
 	</div>
 
@@ -32,32 +33,78 @@
 				</button>
 			</div>
 		</div>
+
+		<!-- Camaro, Chevelle, Nova, Corvette, Other, all hover dropdown -->
+		<!-- Remove Contact link, add contact information in the upper right corner of jumbotron-->
 		<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
 			<ul class="navbar-nav ml-auto flex-nowrap">
-				<li class="nav-item">
-					<a href="#" class="nav-link">Home</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Camaro
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
 				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Shop</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Chevelle
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
 				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Contact Us</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Nova
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
 				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">About Us</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Corvette
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Other
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
 	<br><br>
-	<div class="hexTitle" style="text-align: center">
-		<h1>Hex Bolts</h1>
+	<!-- crossfade transition -->
+	<div class="hexTitle">
+		<h1>Inventory</h1>
 	</div>
 	<br>
 
-	<div id="hexBoltSlide" class="carousel slide" data-ride="carousel"
-		style="height: 300px; width: 300px; left: 350px;">
+	<div id="hexBoltSlide" class="carousel slide carousel-fade" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img src="assets/images/3794.jpg" class="d-block w-100" alt="...">
@@ -74,14 +121,18 @@
 
 	<br><br>
 
-	
-	<div class="jumbotron" style="	margin-bottom: 0%; margin-top: 50px; text-align: center;">
-			<div class="container">
-				<h1 class="display-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eum optio eligendi doloremque illum tempora, distinctio quisquam nihil perferendis esse eaque officiis architecto numquam iure blanditiis. Perspiciatis earum quos quia.</h1>
-				<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur saepe tempora iusto harum aliquid sint enim atque officia? Sapiente nesciunt magni cumque eveniet ab nisi quae totam et modi.</p>
-			</div>
+
+	<div class="jumbotron" id="about">
+		<div class="container">
+			<h1 class="display-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eum optio
+				eligendi doloremque illum tempora, distinctio quisquam nihil perferendis esse eaque officiis architecto
+				numquam iure blanditiis. Perspiciatis earum quos quia.</h1>
+			<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur saepe tempora iusto
+				harum aliquid sint enim atque officia? Sapiente nesciunt magni cumque eveniet ab nisi quae totam et
+				modi.</p>
 		</div>
-	
+	</div>
+
 
 
 
@@ -93,9 +144,10 @@
 
 	<script>
 		$(document).ready(function () {
-			$('.carousel').carousel({
+			$('.carousel-fade').carousel({
 				interval: 2000
-			})
+			});
+			$('.dropdown-toggle').dropdown();
 
 		})
 
